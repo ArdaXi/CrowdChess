@@ -1,3 +1,6 @@
+dist/
+/*.d.ts
+
 # Logs
 logs
 *.log

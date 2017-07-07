@@ -1,0 +1,38 @@
+.container {
+  max-width: none;
+}
+
+.sidebox {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.sidebox-container {
+  height: 96%;
+}
+
+.chat {
+}
+
+.tab {
+  border: 1px solid #ccc;
+  border-width: 0 0 1px 0;
+  padding: 4px 8px 5px 8px;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 0 5px;
+}
+
+ol {
+  padding: 0;
+}
+
+.user {
+  padding-right: 6px;
+  opacity: 0.8;
+}
