@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/css/simple-grid.min.css">
     <link rel="stylesheet" href="assets/css/crowdchess.css">
     <link rel="stylesheet" href="assets/css/chessground.css">
+    <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/theme.css">
   </head>
   <body>
@@ -13,7 +14,12 @@
         <div class="col-2">
           <div class="sidebox-container">
             <div class="sidebox">
-              <div class="tab"><span>Votes</span></div>
+              <div class="tab"><span>Votes</span><span id="votestate">Total: 300</span></div>
+              <div class="votes">
+                <div class="voterow"><span class="vote-piece">R</span><span class="vote-text">Rh6</span><span class="vote-count">200 votes</span></div>
+                <div class="voterow"><span class="vote-piece">Q</span><span class="vote-text">Qxd2</span><span class="vote-count">50 votes</span></div>
+                <div class="voterow"><span class="vote-piece">p</span><span class="vote-text">d6</span><span class="vote-count">2 votes</span></div>
+              </div>
             </div>
             <div class="sidebox chat" id="chat">
               <div class="tab"><span>Chat room</span></div>

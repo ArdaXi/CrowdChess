@@ -5,12 +5,51 @@
 .sidebox {
   font-size: 12px;
   border: 1px solid #ccc;
+  border-bottom-width: 0;
   display: flex;
   flex-flow: column nowrap;
 }
 
+.sidebox:last-child {
+  border-bottom-width: 1px;
+}
+
 .sidebox-container {
   height: 96%;
+}
+
+.voterow {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-width: 0 0 1px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.voterow:last-child {
+  border-bottom-width: 0;
+}
+
+.voterow span {
+  display: block;
+  width: 52px;
+}
+
+.vote-piece {
+  font-family: 'ChessSansMerida', sans-serif;
+  font-size: 40px;
+}
+
+.vote-text {
+  font-size: 24px;
+}
+
+.vote-count {
+  text-align: right;
+  padding-right: 5px;
 }
 
 .chat {
@@ -20,6 +59,9 @@
   border: 1px solid #ccc;
   border-width: 0 0 1px 0;
   padding: 4px 8px 5px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 li {
