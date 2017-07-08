@@ -5,7 +5,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "noImplicitAny": false,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "noUnusedLocals": true,
     "noEmitOnError": false,
     "alwaysStrict": true,

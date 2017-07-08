@@ -28,6 +28,7 @@
                   <li><span class="user">ArdaXi</span><span class="msg">Hello, world!</span></li>
                   <li><span class="user">SomeoneElse</span><span class="msg">Goodbye, cruel world!</span></li>
                 </ol>
+                <input class="chatbox" id="chatbox">
               </div>
             </div>
           </div>
@@ -51,7 +52,8 @@
     </div>
     <script src="crowdchess.min.js"></script>
     <script>
-      CrowdChess.run(document.getElementById('crowdchess'), document.getElementById('movetable'));
+      window.addEventListener('resize',
+          CrowdChess.run(document.getElementById('crowdchess'), document.getElementById('movetable')));
     </script>
   </body>
 </html>

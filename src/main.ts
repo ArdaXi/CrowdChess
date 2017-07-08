@@ -14,8 +14,10 @@ export function run(board: Element, table: Element) {
   const patch = init([klass, attributes, listeners, style]);
   const chess = new Chess();
 
-  let cg: Api, vnode: VNode;
+  let cg: Api, vnode: VNode, tableParent: Element;
   let rerenderTable;
+
+  tableParent = table.parentElement.parentElement;
 
   function rerender() {
     vnode = patch(vnode || board, renderBoard());
@@ -42,11 +44,18 @@ export function run(board: Element, table: Element) {
   }
 
   function renderBoard() {
+    let height = tableParent.clientHeight;
+    let size = board.clientWidth;
+
+    if (height != null && board.clientWidth > height) {
+      size = height - 16;
+    }
+
     return h('div#crowdchess', h('div.blue.merida', 
       h('div.cg-board-wrap', {
         style: {
-          width: '700px',
-          height: '700px'
+          width: size + 'px',
+          height: size + 'px'
         },
         hook: {
           insert: drawBoard,
@@ -58,6 +67,8 @@ export function run(board: Element, table: Element) {
   rerenderTable = runTable(chess, table);
 
   rerender();
+
+  return rerender;
 }
 
 function runTable(chess: any, element: Element) {
@@ -102,7 +113,12 @@ function playerMove(cg: Api, chess, cb) {
       },
       viewOnly: false
     });
-    setTimeout(cg.toggleOrientation, 1000);
+
+    if (cg.state.stats.dragged) {
+      setTimeout(cg.toggleOrientation, 100);
+    } else {
+      setTimeout(cg.toggleOrientation, 1000);
+    }
     cb();
   };
 }
