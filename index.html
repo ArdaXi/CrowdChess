@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="assets/css/simple-grid.min.css">
+    <link rel="stylesheet" href="assets/css/crowdchess.css">
+    <link rel="stylesheet" href="assets/css/chessground.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="sidebox-container">
+            <div class="sidebox">
+              <div class="tab"><span>Votes</span></div>
+            </div>
+            <div class="sidebox chat" id="chat">
+              <div class="tab"><span>Chat room</span></div>
+              <div class="discussion">
+                <ol>
+                  <li><span class="user">ArdaXi</span><span class="msg">Hello, world!</span></li>
+                  <li><span class="user">SomeoneElse</span><span class="msg">Goodbye, cruel world!</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8" id="cb-column">
+          <div id="crowdchess">
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="sidebox sidebox-container" id="moves">
+            <div class="tab">
+              <span>Moves</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="crowdchess.min.js"></script>
+    <script>
+      CrowdChess.run(document.getElementById('crowdchess'));
+    </script>
+  </body>
+</html>
