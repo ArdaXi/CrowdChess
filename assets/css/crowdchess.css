@@ -53,6 +53,7 @@
 }
 
 .chat {
+  height: calc(100% - 180px);
 }
 
 .tab {
