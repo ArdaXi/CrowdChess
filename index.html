@@ -35,13 +35,19 @@
             <div class="tab">
               <span>Moves</span>
             </div>
+            <div class="movetable">
+              <table id="movetable">
+                <tr><th>1</th><td>e4</td><td>e5</td></tr>
+                <tr><th>2</th><td>f4</td><td>Bc5</td></tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="crowdchess.min.js"></script>
     <script>
-      CrowdChess.run(document.getElementById('crowdchess'));
+      CrowdChess.run(document.getElementById('crowdchess'), document.getElementById('movetable'));
     </script>
   </body>
 </html>
