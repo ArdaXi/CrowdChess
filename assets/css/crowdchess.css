@@ -1,3 +1,16 @@
+body {
+  background: #e8e8e8;
+}
+
+div#crowdchess {
+  width: 100%;
+}
+
+.cg-board-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   max-width: none;
 }
@@ -56,6 +69,15 @@
   height: calc(100% - 180px);
 }
 
+.discussion {
+  height: calc(100% - 74px);
+}
+
+.chatbox {
+  border: 1px solid #ccc;
+  border-width: 1px 0 1px 0;
+}
+
 .tab {
   border: 1px solid #ccc;
   border-width: 0 0 1px 0;
@@ -63,6 +85,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+input {
+  width: 100%;
 }
 
 li {
@@ -73,6 +99,7 @@ li {
 
 ol {
   padding: 0;
+  height: 100%;
 }
 
 .user {
@@ -98,5 +125,6 @@ th {
 }
 
 td {
+  background: #f0f0f0;
   padding-left: 5px;
 }
