@@ -36,3 +36,24 @@ ol {
   padding-right: 6px;
   opacity: 0.8;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-width: 0 0 1px 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-width: 0 0 0 1px;
+}
+
+th {
+  border-width: 0 1px 0 0;
+}
+
+td {
+  padding-left: 5px;
+}
