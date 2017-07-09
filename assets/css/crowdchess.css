@@ -2,6 +2,16 @@ body {
   background: #e8e8e8;
 }
 
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 10px;
+  height: 96%;
+  align-items: center;
+  justify-items: center;
+}
+
 div#crowdchess {
   width: 100%;
 }
@@ -29,6 +39,9 @@ div#crowdchess {
 
 .sidebox-container {
   height: 96%;
+  max-width: 300px;
+  width: 100%;
+  min-width: 200px;
 }
 
 .voterow {
@@ -70,7 +83,7 @@ div#crowdchess {
 }
 
 .discussion {
-  height: calc(100% - 74px);
+  height: calc(100% - 67px);
 }
 
 .chatbox {
@@ -100,6 +113,7 @@ li {
 ol {
   padding: 0;
   height: 100%;
+  overflow-y: hidden;
 }
 
 .user {
