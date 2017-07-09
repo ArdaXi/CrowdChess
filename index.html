@@ -2,51 +2,43 @@
   <head>
     <title>CrowdChess</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="assets/css/simple-grid.min.css">
     <link rel="stylesheet" href="assets/css/crowdchess.css">
     <link rel="stylesheet" href="assets/css/chessground.css">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/theme.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <div class="sidebox-container">
-            <div class="sidebox">
-              <div class="tab"><span>Votes</span><span id="votestate">Total: 300</span></div>
-              <div class="votes">
-                <div class="voterow"><span class="vote-piece">R</span><span class="vote-text">Rh6</span><span class="vote-count">200 votes</span></div>
-                <div class="voterow"><span class="vote-piece">Q</span><span class="vote-text">Qxd2</span><span class="vote-count">50 votes</span></div>
-                <div class="voterow"><span class="vote-piece">p</span><span class="vote-text">d6</span><span class="vote-count">2 votes</span></div>
-              </div>
-            </div>
-            <div class="sidebox chat" id="chat">
-              <div class="tab"><span>Chat room</span></div>
-              <div class="discussion">
-                <ol>
-                  <li><span class="user">ArdaXi</span><span class="msg">Hello, world!</span></li>
-                  <li><span class="user">SomeoneElse</span><span class="msg">Goodbye, cruel world!</span></li>
-                </ol>
-                <input class="chatbox" id="chatbox">
-              </div>
-            </div>
+    <div class="wrapper">
+      <div class="sidebox-container">
+        <div class="sidebox">
+          <div class="tab"><span>Votes</span><span id="votestate">Total: 300</span></div>
+          <div class="votes">
+            <div class="voterow"><span class="vote-piece">R</span><span class="vote-text">Rh6</span><span class="vote-count">200 votes</span></div>
+            <div class="voterow"><span class="vote-piece">Q</span><span class="vote-text">Qxd2</span><span class="vote-count">50 votes</span></div>
+            <div class="voterow"><span class="vote-piece">p</span><span class="vote-text">d6</span><span class="vote-count">2 votes</span></div>
           </div>
         </div>
-        <div class="col-8" id="cb-column">
-          <div id="crowdchess">
+        <div class="sidebox chat" id="chat">
+          <div class="tab"><span>Chat room</span></div>
+          <div class="discussion">
+            <ol>
+              <li><span class="user">ArdaXi</span><span class="msg">Hello, world!</span></li>
+              <li><span class="user">SomeoneElse</span><span class="msg">Goodbye, cruel world!</span></li>
+              <li><span class="user">Lipsum</span><span class="msg"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis commodo ante, id pellentesque urna semper tempor. Donec congue est at enim tristique finibus. Sed facilisis malesuada sapien ac mattis. Sed nibh nisl, fringilla et turpis non, faucibus dignissim magna. Donec in enim eu ligula interdum pellentesque. Suspendisse facilisis metus at facilisis molestie. Suspendisse ante risus, lobortis finibus mattis et, convallis et libero. Ut luctus justo non metus consectetur sollicitudin. Integer ut diam nulla. Mauris in est condimentum, volutpat odio nec, condimentum dui. Etiam mollis sit amet ipsum id mattis. Aenean ipsum urna, laoreet vitae faucibus quis, pulvinar eu erat. Etiam maximus justo risus, nec molestie augue lobortis ut.</span></li>
+            </ol>
+            <input class="chatbox" id="chatbox">
           </div>
         </div>
-        <div class="col-2">
-          <div class="sidebox sidebox-container" id="moves">
-            <div class="tab">
-              <span>Moves</span>
-            </div>
-            <div class="movetable">
-              <table id="movetable">
-              </table>
-            </div>
-          </div>
+      </div>
+      <div id="crowdchess">
+      </div>
+      <div class="sidebox sidebox-container" id="moves">
+        <div class="tab">
+          <span>Moves</span>
+        </div>
+        <div class="movetable">
+          <table id="movetable">
+          </table>
         </div>
       </div>
     </div>
